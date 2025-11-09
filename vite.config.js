@@ -4,4 +4,11 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),tailwindcss(),],
+    assetsInclude: ['**/*.glb'], 
+      publicDir: 'public',
+        server: {
+    watch: {
+      usePolling: true
+    }
+  }
 })

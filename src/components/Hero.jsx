@@ -1,5 +1,5 @@
-import MackBookTitle from './public/title.png'
-import HeroVideo from './public/videos/hero.mp4'
+import MackBookTitle from '../public/title.png'
+import HeroVideo from '../public/videos/hero.mp4'
 import { useRef , useEffect } from 'react'
 function Hero() {
     const videoRef = useRef();

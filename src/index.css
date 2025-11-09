@@ -132,7 +132,7 @@ body {
     }
 
     button {
-      @apply relative z-10 bg-primary text-whit px-6 mt-10 lg:mt-0 mb-5 rounded-full font-semibold text-lg cursor-pointer hover:bg-white hover:text-black transition-all duration-300 ease-in-out;
+      @apply relative z-10 bg-primary text-white px-6 mt-10 lg:mt-0 mb-5 rounded-full font-semibold text-lg cursor-pointer hover:bg-white hover:text-black transition-all duration-300 ease-in-out;
     }
 
     p {
@@ -154,7 +154,7 @@ body {
         @apply text-xs text-white bg-black/20 px-2 py-1 rounded-lg;
       }
 
-      .color-control {e py-2
+      .color-control {
         @apply flex-between bg-neutral-800 rounded-full px-6 py-3 gap-4;
 
         div {

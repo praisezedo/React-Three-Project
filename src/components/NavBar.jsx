@@ -1,7 +1,7 @@
-import AppleLogo from './public/logo.svg'
-import Cartlogo from './public/cart.svg'
-import SearchLogo from './public/search.svg'
-import { NavLinks } from './Constants/NavLink.js'
+import AppleLogo from '../public/logo.svg'
+import Cartlogo from '../public/cart.svg'
+import SearchLogo from '../public/search.svg'
+import { NavLinks} from '../Constants/NavLink.js'
 function NavBar() {
 return (
 <>
