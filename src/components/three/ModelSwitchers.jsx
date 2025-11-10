@@ -13,7 +13,6 @@ const fadMeshes = (group , opacity) => {
     if(!group || !group.traverse) return;
   group.traverse((child) => {
   if (child.isMesh) {
-            child.material.transparent = true;
             gsap.to(child.material , {opacity , duration: AMIMATION_DURATION});
         }
     })
@@ -47,9 +46,9 @@ function ModelSwitchers({scale , isMobile}) {
  }
   },[scale])
   const controlconfig = {
-      snap: true,
-      speed: 1,
-   //polar: [-Math.PI , Math.PI],
+    snap: true,
+    speed: 1,
+     polar: [-Math.PI , Math.PI],
      zoom: 1,
      azimuth: [-Infinity , Infinity],
 }

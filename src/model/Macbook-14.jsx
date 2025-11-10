@@ -5,20 +5,19 @@ import { useGLTF, useTexture } from '@react-three/drei'
 import { useEffect } from 'react';
 import screenimg from '../public/screen.png';
 import useMacBookStore  from '../Store/index.js';
-import { noChangeParts } from '../Constants/NavLink.js';
+
 import * as THREE from 'three';
 export default function Macbook14(props) {
   const { nodes, materials , scene } = useGLTF('/models/macbook-14-transformed.glb');
   const texture = useTexture(screenimg);
+  texture.colorSpace = THREE.SRGBColorSpace;
+  texture.needsUpdate = true;
   const {color} = useMacBookStore();
 
 useEffect(() => {
      scene.traverse((child) => {
       if (child.isMesh) {
-            if(noChangeParts.includes(child.name)) {
               child.material.color = new THREE.Color(color)
-
-            }
       }
      })
 },[color , scene])
