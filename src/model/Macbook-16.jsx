@@ -4,16 +4,17 @@ import { useGLTF, useTexture } from '@react-three/drei'
 import * as THREE from 'three';
 import screenimg from '../public/screen.png'
 import { useEffect } from 'react';
-
 import useMacBookStore  from '../Store/index.js';
 export default function Macbook16(props) {
   const { nodes, materials ,scene} = useGLTF('/models/macbook-14-transformed.glb')
 const texture = useTexture(screenimg)
+texture.colorSpace = THREE.SRGBColorSpace;
+texture.needsUpdate = true;
 const {color} = useMacBookStore();
 useEffect(() => {
      scene.traverse((child) => {
       if (child.isMesh) {
-              child.material.color = new THREE.Color(color)
+      child.material.color = new THREE.Color(color)
       }
      })
 },[color , scene])
