@@ -148,7 +148,7 @@ body {
     }
 
     .controls {
-      @apply absolute z-40 bottom-40 lg:bottom-40 2xl:bottom-52 left-1/2 -translate-x-1/2;
+      @apply absolute z-50 bottom-40 lg:bottom-40 2xl:bottom-52 left-1/2 -translate-x-1/2;
 
       .info {
         @apply text-xs text-white bg-black/20 px-2 py-1 rounded-lg;
@@ -176,7 +176,7 @@ body {
     }
 
     #canvas {
-      @apply !w-full !h-[80vh] lg:!h-dvh relative z-30;
+      @apply !w-full !h-[80vh] lg:!h-dvh relative z-40;
     }
   }
 
@@ -270,7 +270,7 @@ body {
       @apply mx-auto max-w-xl mt-24;
 
       p {
-        @apply lg:h3-semibold base-semibold text-center translate-y-0 opacity-0 px-5;
+        @apply lg:h3-semibold base-semibold text-center translate-y-10 opacity-0 px-5;
       }
     }
   }
